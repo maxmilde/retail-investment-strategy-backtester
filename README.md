@@ -74,7 +74,7 @@ For each strategy the app reports:
 - **IRR:** computed from the monthly cash flows and annualised as (1 + monthly IRR)^12 - 1.
 - **Maximum drawdown:** largest peak-to-trough fall in portfolio value, observed at monthly frequency. Portfolio value includes new contributions.
 - **Calmar ratio:** CAGR / |maximum drawdown|.
-- **Multi-asset portfolios:** the portfolio price is the simple average of the selected tickers' adjusted prices, so it is not a rebalanced equal-weight portfolio and higher-priced stocks carry more weight.
+- **Multi-asset portfolios:** the app builds one synthetic price series by taking the simple average of the selected tickers' adjusted prices on each day, and runs the strategy on that series as if it were a single asset. This is an average of share prices, not an equal-weight portfolio: a stock with a higher share price moves the series more than a cheaper one, regardless of percentage return. Holdings are not tracked per stock and nothing is rebalanced. A ticker with no data yet at the start (for example a later listing) is left out until its data begins.
 
 ## Limitations
 
