@@ -1,3 +1,6 @@
 .DS_Store
 .Rhistory
 INTERFACE_IMPROVEMENTS.md
+
+__pycache__/
+*.pyc
