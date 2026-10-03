@@ -84,7 +84,7 @@ For each strategy the app reports:
 ## Project structure
 
 ```text
-Retail-Investment-Strategy-Backtester/
+retail-investment-strategy-backtester/
 ├── interface.py            Panel app: inputs, strategy comparison, charts
 ├── dca_simulator/
 │   ├── data_loader.py      Download and load price data (single and multiple tickers)
